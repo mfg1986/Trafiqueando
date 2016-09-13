@@ -1,0 +1,378 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="yyh-OZ-Bvz">
+    <dependencies>
+        <deployment version="2048" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="Forte.ttf">
+            <string>ForteMT</string>
+            <string>ForteMT</string>
+            <string>ForteMT</string>
+            <string>ForteMT</string>
+            <string>ForteMT</string>
+            <string>ForteMT</string>
+            <string>ForteMT</string>
+            <string>ForteMT</string>
+            <string>ForteMT</string>
+            <string>ForteMT</string>
+            <string>ForteMT</string>
+            <string>ForteMT</string>
+        </mutableArray>
+    </customFonts>
+    <scenes>
+        <!--Listado View Controller-->
+        <scene sceneID="Vfe-0d-xrE">
+            <objects>
+                <tableViewController id="1dq-L4-1ld" customClass="TRListadoViewController" sceneMemberID="viewController">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="78" sectionHeaderHeight="22" sectionFooterHeight="22" id="NGP-UH-arI">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="504"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="CeldaPersonalizada" rowHeight="78" id="ACb-e2-zUr" customClass="TRCeldaPersonalizada">
+                                <rect key="frame" x="0.0" y="22" width="320" height="78"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ACb-e2-zUr" id="vem-X6-pDl">
+                                    <rect key="frame" x="0.0" y="0.0" width="287" height="77"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Tipo" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="J8q-fo-HMc">
+                                            <rect key="frame" x="83" y="28" width="204" height="21"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" name="ForteMT" family="Forte" pointSize="16"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </label>
+                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Titulo" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="neE-qT-BL2">
+                                            <rect key="frame" x="83" y="8" width="204" height="21"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <color key="backgroundColor" red="0.92549019607843142" green="0.92549019607843142" blue="0.92549019607843142" alpha="1" colorSpace="calibratedRGB"/>
+                                            <fontDescription key="fontDescription" name="ForteMT" family="Forte" pointSize="14"/>
+                                            <color key="textColor" red="0.41613399621212122" green="0.41613399621212122" blue="0.41613399621212122" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </label>
+                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Fecha" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ujb-mq-oXq">
+                                            <rect key="frame" x="83" y="48" width="177" height="21"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" name="ForteMT" family="Forte" pointSize="12"/>
+                                            <color key="textColor" red="0.73725490196078436" green="0.0" blue="0.011764705882352941" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </label>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="ATP" id="mHK-U1-yTI">
+                                            <rect key="frame" x="5" y="7" width="70" height="62"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        </imageView>
+                                    </subviews>
+                                </tableViewCellContentView>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outlet property="fechaCelda" destination="ujb-mq-oXq" id="o3W-I5-sIg"/>
+                                    <outlet property="imagenCelda" destination="mHK-U1-yTI" id="GgP-yU-uLL"/>
+                                    <outlet property="tipoCelda" destination="J8q-fo-HMc" id="qGY-bV-NJx"/>
+                                    <outlet property="tituloCelda" destination="neE-qT-BL2" id="QC0-vR-aob"/>
+                                    <segue destination="yKg-KN-vTB" kind="push" identifier="MostrarDetalle" id="KFg-AH-wm9"/>
+                                </connections>
+                            </tableViewCell>
+                            <tableViewCell userInteractionEnabled="NO" contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="CeldaVacia" rowHeight="78" id="YBj-r9-E8Z" customClass="TRCeldaPersonalizada">
+                                <rect key="frame" x="0.0" y="100" width="320" height="78"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="YBj-r9-E8Z" id="5D4-xE-HkC">
+                                    <rect key="frame" x="0.0" y="0.0" width="287" height="77"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Titulo" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="BbN-tl-SmN">
+                                            <rect key="frame" x="83" y="8" width="204" height="21"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <color key="backgroundColor" red="0.92549019610000005" green="0.92549019610000005" blue="0.92549019610000005" alpha="1" colorSpace="calibratedRGB"/>
+                                            <fontDescription key="fontDescription" name="ForteMT" family="Forte" pointSize="14"/>
+                                            <color key="textColor" red="0.41613399620000002" green="0.41613399620000002" blue="0.41613399620000002" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </label>
+                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Tipo" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="OP1-N7-WPF">
+                                            <rect key="frame" x="83" y="28" width="204" height="21"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </label>
+                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Fecha" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="JPw-cq-RCK">
+                                            <rect key="frame" x="97" y="37" width="177" height="21"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" name="ForteMT" family="Forte" pointSize="12"/>
+                                            <color key="textColor" red="0.73725490196078436" green="0.0" blue="0.011764705882352941" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </label>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="icono57pt" id="BG8-SQ-gPh">
+                                            <rect key="frame" x="5" y="7" width="70" height="62"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        </imageView>
+                                    </subviews>
+                                </tableViewCellContentView>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outlet property="fechaCelda" destination="JPw-cq-RCK" id="9Mj-JD-NuS"/>
+                                    <outlet property="imagenCelda" destination="BG8-SQ-gPh" id="QxS-Cg-hOV"/>
+                                    <outlet property="tipoCelda" destination="OP1-N7-WPF" id="z95-Sp-cep"/>
+                                    <outlet property="tituloCelda" destination="BbN-tl-SmN" id="U2R-SU-bB7"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="1dq-L4-1ld" id="6PH-ZG-h6O"/>
+                            <outlet property="delegate" destination="1dq-L4-1ld" id="bmG-YZ-iKO"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="iuM-J1-Qvb">
+                        <barButtonItem key="leftBarButtonItem" image="btnMenu" id="vlu-X2-ITA">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <connections>
+                                <action selector="mostrarFiltro:" destination="1dq-L4-1ld" id="S84-AO-Uw0"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="refresh" id="NX4-p0-u9s">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <connections>
+                                <action selector="recargaFeed:" destination="1dq-L4-1ld" id="ffh-RI-veg"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="btnMostrarFiltro" destination="vlu-X2-ITA" id="hLK-WJ-Iwr"/>
+                        <outlet property="tableView" destination="NGP-UH-arI" id="brR-eV-Dqx"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="B2j-EG-GCT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="510" y="-353"/>
+        </scene>
+        <!--Detalle-->
+        <scene sceneID="ADA-tC-qRI">
+            <objects>
+                <viewController id="yKg-KN-vTB" customClass="TRDetalleViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" restorationIdentifier="" id="J96-rs-rAK">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="612"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="k3f-SH-bue">
+                                <rect key="frame" x="-20" y="-20" width="376" height="632"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" heightSizable="YES"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" id="d0w-dY-2Jz" userLabel="contentView">
+                                        <rect key="frame" x="20" y="20" width="320" height="632"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Latitud" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="AUo-id-qEQ">
+                                                <rect key="frame" x="90" y="164" width="113" height="21"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" name="ForteMT" family="Forte" pointSize="12"/>
+                                                <color key="textColor" red="0.33514835859999997" green="0.33514835859999997" blue="0.33514835859999997" alpha="1" colorSpace="calibratedRGB"/>
+                                                <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="15/12/1986  7:00:00" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ZeB-tG-Fq3">
+                                                <rect key="frame" x="118" y="54" width="202" height="21"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" name="ForteMT" family="Forte" pointSize="12"/>
+                                                <color key="textColor" red="0.33514835858585856" green="0.33514835858585856" blue="0.33514835858585856" alpha="1" colorSpace="calibratedRGB"/>
+                                                <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            </label>
+                                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" id="K4i-qu-cdg">
+                                                <rect key="frame" x="0.0" y="248" width="320" height="254"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </mapView>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ATP" id="cJC-4K-Z78">
+                                                <rect key="frame" x="8" y="21" width="59" height="49"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ATPtipo" id="SJf-kb-RQL">
+                                                <rect key="frame" x="0.0" y="0.0" width="320" height="16"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tituloLocalizacion" id="2lK-j6-erF">
+                                                <rect key="frame" x="0.0" y="217" width="320" height="32"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="coordenadas" id="yS2-EV-mnx">
+                                                <rect key="frame" x="10" y="164" width="76" height="31"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tituloFecha" id="JMP-e9-pR8">
+                                                <rect key="frame" x="75" y="60" width="34" height="10"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tituloDescripcion" id="svT-hK-5zo">
+                                                <rect key="frame" x="10" y="78" width="63" height="13"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pieDetalle" id="Ewj-5V-vMz">
+                                                <rect key="frame" x="0.0" y="498" width="320" height="185"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Longitud" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="M2i-hR-Rv1">
+                                                <rect key="frame" x="90" y="188" width="118" height="21"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" name="ForteMT" family="Forte" pointSize="12"/>
+                                                <color key="textColor" red="0.33514835859999997" green="0.33514835859999997" blue="0.33514835859999997" alpha="1" colorSpace="calibratedRGB"/>
+                                                <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="3bk-a0-cHJ">
+                                                <rect key="frame" x="226" y="165" width="84" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" red="0.73725490196078436" green="0.0" blue="0.011764705882352941" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" name="ForteMT" family="Forte" pointSize="15"/>
+                                                <state key="normal" title="Ir a la Web" backgroundImage="cancel_btn">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <color key="titleShadowColor" red="0.65490196079999996" green="0.062745098040000002" blue="0.062745098040000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <segue destination="w2S-Te-8fQ" kind="push" identifier="MostrarWeb" id="aG2-mT-toU"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="wd1-cT-DGc">
+                                                <rect key="frame" x="10" y="257" width="31" height="31"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <fontDescription key="fontDescription" name="ForteMT" family="Forte" pointSize="15"/>
+                                                <state key="normal">
+                                                    <color key="titleColor" red="0.50547388980263153" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="centrarMapa:" destination="yKg-KN-vTB" eventType="touchUpInside" id="RD6-UI-A26"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Vzx-ix-ZGF">
+                                                <rect key="frame" x="55" y="257" width="31" height="31"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" red="0.65490196079999996" green="0.062745098040000002" blue="0.062745098040000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <state key="normal">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="mapaPantallaCompleta:" destination="yKg-KN-vTB" eventType="touchUpInside" id="c4f-zi-NaN"/>
+                                                </connections>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Descripcion" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="kSj-sG-dX5">
+                                                <rect key="frame" x="10" y="94" width="300" height="50"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" red="0.98039215686274506" green="0.98039215686274506" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" name="ForteMT" family="Forte" pointSize="12"/>
+                                                <color key="textColor" red="0.5623619002525253" green="0.52848113186264067" blue="0.52290078434230625" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tituloLugar" id="meN-tb-k8t">
+                                                <rect key="frame" x="75" y="27" width="34" height="12"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PLAZA DE LA REPUBLICA" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="LIb-UE-hBE">
+                                                <rect key="frame" x="120" y="25" width="192" height="21"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" name="ForteMT" family="Forte" pointSize="12"/>
+                                                <color key="textColor" red="0.33514835859999997" green="0.33514835859999997" blue="0.33514835859999997" alpha="1" colorSpace="calibratedRGB"/>
+                                                <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.85098039215686272" green="0.84705882352941175" blue="0.84705882352941175" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" red="0.81960784313725488" green="0.78823529411764703" blue="0.78823529411764703" alpha="1" colorSpace="calibratedRGB"/>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Detalle" id="qLp-Cq-VEH"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="320" height="676"/>
+                    <connections>
+                        <outlet property="btnCentrar" destination="wd1-cT-DGc" id="DYT-X6-hYx"/>
+                        <outlet property="btnLink" destination="3bk-a0-cHJ" id="0GN-b9-66g"/>
+                        <outlet property="btnPantallaCompleta" destination="Vzx-ix-ZGF" id="fwa-S4-GCS"/>
+                        <outlet property="contentView" destination="d0w-dY-2Jz" id="VH5-cZ-S87"/>
+                        <outlet property="descripcionDetalle" destination="kSj-sG-dX5" id="NO5-Qw-cdM"/>
+                        <outlet property="descripcionLabel" destination="svT-hK-5zo" id="3kY-mC-S8v"/>
+                        <outlet property="fechaDetalle" destination="ZeB-tG-Fq3" id="XhH-jP-UVB"/>
+                        <outlet property="fechaLabel" destination="JMP-e9-pR8" id="m9k-k2-R43"/>
+                        <outlet property="iconoCoordenadas" destination="yS2-EV-mnx" id="qwB-PV-Vgn"/>
+                        <outlet property="iconoTipo" destination="cJC-4K-Z78" id="IBx-hX-ZNr"/>
+                        <outlet property="imagenPie" destination="Ewj-5V-vMz" id="Eg0-2i-abp"/>
+                        <outlet property="latitud" destination="AUo-id-qEQ" id="7cj-rO-app"/>
+                        <outlet property="longitud" destination="M2i-hR-Rv1" id="rcb-f0-gSB"/>
+                        <outlet property="lugarLabel" destination="meN-tb-k8t" id="0ka-kc-45y"/>
+                        <outlet property="mapaDetalle" destination="K4i-qu-cdg" id="ohV-uP-oE4"/>
+                        <outlet property="scrollView" destination="k3f-SH-bue" id="XJZ-Qb-FH7"/>
+                        <outlet property="tipo" destination="SJf-kb-RQL" id="yrF-Iq-Ld6"/>
+                        <outlet property="tituloDetalle" destination="LIb-UE-hBE" id="cUQ-QI-Z2R"/>
+                        <outlet property="tituloLocalizacion" destination="2lK-j6-erF" id="c7x-hO-ont"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Cf3-Pu-pnC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1066" y="-353"/>
+        </scene>
+        <!--Página oficial-->
+        <scene sceneID="noi-08-B7q">
+            <objects>
+                <viewController id="w2S-Te-8fQ" customClass="TRWebViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="AbR-Nm-1Xm">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="612"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" id="du9-jl-tqN">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="612"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Página oficial" id="BEn-Vb-hKk"/>
+                    <connections>
+                        <outlet property="webView" destination="du9-jl-tqN" id="rsu-et-qSg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pT4-7F-V5z" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1590" y="-353"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="8Ph-zh-9Mf">
+            <objects>
+                <navigationController restorationIdentifier="" definesPresentationContext="YES" id="yyh-OZ-Bvz" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="ba0-Ai-HMr">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.79140111020000004" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" name="ForteMT" family="Forte" pointSize="30"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <color key="textShadowColor" red="0.50547388979999996" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="1dq-L4-1ld" kind="relationship" relationship="rootViewController" id="fzg-WV-LYY"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="D81-ak-NjM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="38" y="-353"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="ATP" width="100" height="100"/>
+        <image name="ATPtipo" width="320" height="16"/>
+        <image name="btnMenu" width="21" height="20"/>
+        <image name="cancel_btn" width="127" height="42"/>
+        <image name="coordenadas" width="76" height="31"/>
+        <image name="icono57pt" width="57" height="57"/>
+        <image name="pieDetalle" width="320" height="185"/>
+        <image name="tituloDescripcion" width="63" height="13"/>
+        <image name="tituloFecha" width="34" height="10"/>
+        <image name="tituloLocalizacion" width="320" height="32"/>
+        <image name="tituloLugar" width="34" height="12"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>
